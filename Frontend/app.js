@@ -1,4 +1,4 @@
-const map = L.map('map').setView([-33.9249, 18.4241], 11); // Cape Town
+/* const map = L.map('map').setView([-33.9249, 18.4241], 11); // Cape Town
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; OpenStreetMap contributors'
@@ -15,4 +15,4 @@ function getColor(crimes) {
   if (crimes > 500) return "orange";
   return "green";
 }
-
+*/

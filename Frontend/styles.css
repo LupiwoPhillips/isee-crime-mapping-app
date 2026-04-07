@@ -1,15 +1,29 @@
-.top-nav {
+.topnav {
   display:flex;
-  justify-content: flex-end ;
+  justify-content: space-between ;
+  align-items: center ;
+  background-color: #0a1f44;
+  padding: 15px 30px;
 }
 
-.top-nav ul {
+.topnav h1 {
+  color: white;
+  margin: 0;
+  font-size: 24px;
+}
+
+.topnav ul {
   display: flex;
   list-style: none;
   margin: 0%;
   padding: 0%;
 }
 
-.top-nav li {
-  margin-left: 20px;
+.topnav li {
+  margin-left: 25px;
 }
+
+.topnav a:hover {
+  color: #4da6ff;
+}
+
