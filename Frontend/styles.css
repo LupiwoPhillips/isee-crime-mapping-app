@@ -1,4 +1,15 @@
-#map {
-  height: 90vh;
-  width: 100%;
+.top-nav {
+  display:flex;
+  justify-content: flex-end ;
+}
+
+.top-nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0%;
+  padding: 0%;
+}
+
+.top-nav li {
+  margin-left: 20px;
 }
