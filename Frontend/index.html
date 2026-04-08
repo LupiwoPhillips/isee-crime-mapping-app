@@ -4,6 +4,7 @@
   <title>Crime Map - Cape Town</title>
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter;wght@400;600&display=swap"rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -11,7 +12,7 @@
 
   <div id="header"></div>
   <div class="topnav">
-    <h1>ISeeCrimeMap</h1>
+    <h1>ISee Crime Mapping App</h1>
     <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About</a></li>
@@ -19,11 +20,64 @@
     <li><a href="news.html">News</a></li>
     </ul>
   </div>
+    <!-- Page Content -->
+  <div class="content">
+    <div class="page-header">
+      <h1>Crime Map Dashboard</h1>
+      <p>Monitor and track reported incidents in your area</p>
+    </div>
+    <!-- Filters -->
+    <div class="filters">
+      <select>
+        <option>All Crime Types</option>
+        <option>Theft</option>
+        <option>Assault</option>
+        <option>Buglary</option>
+      </select>
 
+      <select>
+        <option>Last 24 Hours</option>
+        <option>Last Week</option>
+        <option>Last Month</option>
+      </select>
+      <button>Apply Filters</button>
 
+    </div>
+
+    <!-- Map Layout -->
+     <div class="dashboard">
+
+      <!--Map section-->
+      <div class="map-container">
+        <h2>Live Crime Map</h2>
+        <div id="map"></div>
+        <p>Map loading...</p>
+      </div>
+     </div>
+
+     <!-- Reports Section -->
+      <div class="reports">
+        <h2>Recent Reports</h2>
+      </div>
+
+      <div class="report-card">
+        <h3>Theft</h3>
+        <p>Location: Main Street</p>
+        <span>2 hours ago</span>
+      </div>
+      <div class="report-card">
+        <h3>Assault</h3>
+        <p>Location: Central Park</p>
+        <span>5 hours ago</span>
+      </div>
+      <div class="report-card">
+        <h3>Burglary</h3>
+        <p>Location: Sunset Avenue</p>
+        <span>Yesterday</span>
+      </div>
   <div id="map"></div>
 
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <script src=""></script>
+  <script src="app.js"></script>
 </body>
 </html>
