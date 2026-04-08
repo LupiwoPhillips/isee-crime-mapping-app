@@ -46,3 +46,50 @@ body {
   background : #0f172a;
   color : #e2e8f0;
 }
+
+.content {
+  padding: 30px;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 28px;
+  color:#38bdf8;
+}
+
+.page-header p {
+  margin-top: 5px;
+  color: #94a3b8;
+}
+
+.filters {
+  margin: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.filters select, 
+.filters button {
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.filters select {
+  background: #1e293b;
+  color: #e2e8f0
+}
+
+.filters button {
+  background: #38bdf8;
+  color: #0f172a;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filters button:hover {
+  background: #0ea5e9;
+}
