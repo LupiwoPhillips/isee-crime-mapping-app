@@ -93,3 +93,66 @@ body {
 .filters button:hover {
   background: #0ea5e9;
 }
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.map-container {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.map-container h2 {
+  margin-bottom : 10px
+}
+
+#map {
+  height: 350px;
+  background: #0f172a;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  color: #64748b
+}
+
+.reports {
+  background: #1e293b;
+  padding:20px;
+  border-radius: 12px;
+}
+
+.reports h2 {
+  margin-bottom: 15px;
+}
+
+.report-card {
+  background: #0f172a;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.report-card h3 {
+  margin: 0%;
+  color: #38bdf8;
+}
+
+.report-card P {
+  margin: 5px 0;
+  color: #cbd5f5;
+}
+
+.report-card span {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.report-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.2);
+}
