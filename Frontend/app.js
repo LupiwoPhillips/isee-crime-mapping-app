@@ -20,17 +20,16 @@ reportsWithCoords.forEach(report => {
 function displayReports(filteredReports) {
   const container = document.getElementById("reportsContainer");
   container.innerHTML = "";
+  filteredReports.forEach(report => {
+    container.innerHTML += `
+      <div class="report-card">
+        <h3>${report.type}</h3>
+        <p>Location: ${report.locations}</p>
+        <span>${report.time} hours ago</span>
+      </div>
+    `;
+  });
 }
-
-filteredReports.forEach(report => {
-  container.innerHTML += `
-    <div class="report-card">
-      <h3>${report.type}</h3>
-      <p>Location: ${report.locations}</p>
-      <span>${report.time} hours ago</span>
-    </div>
-  `;
-});
 
 // FILTER FUNCTION
 document.getElementById('applyFilters').addEventListener('click', () => {
@@ -51,7 +50,9 @@ document.getElementById('applyFilters').addEventListener('click', () => {
   displayReports(filtered);
 });
 
+
+
 // INITIAL DISPLAY
-displayReports(reports);
+displayReports("reports");
 
 
